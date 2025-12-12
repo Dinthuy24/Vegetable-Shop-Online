@@ -7,7 +7,7 @@ class UserDAL {
     private $conn;
 
     public function __construct() {
-        $this->conn = (new Database())->connect();
+        $this->conn = (new Database())->getConnection();
     }
 
     // Kiểm tra username đã tồn tại chưa
